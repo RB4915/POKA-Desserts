@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>POKA - Luxury Desserts</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Open Sans', sans-serif; background-color: #fff8f2; color: #3e2723; }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .hero video {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+    .hero-overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+    }
+    .hero-content {
+      position: relative;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+    }
+    .hero-content h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      letter-spacing: 2px;
+      margin-bottom: 1rem;
+    }
+    .hero-content p {
+      font-size: 1.2rem;
+      max-width: 600px;
+    }
+
+    /* Products Section */
+    .section {
+      padding: 5rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section h2 {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: #5d4037;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .product-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .product-info {
+      padding: 1.5rem;
+    }
+    .product-info h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .product-info p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    .price {
+      font-weight: bold;
+      color: #d84315;
+      font-size: 1.2rem;
+    }
+
+    /* Footer */
+    footer {
+      background: #fceee3;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Video Section -->
+  <section class="hero">
+    <video autoplay muted loop>
+      <source src="https://videocdn.cdnpk.net/videos/db8ca79d-b72a-5707-bad9-7be1c8ebc8c0/horizontal/previews/clear/large.mp4?token=exp=1746951960~hmac=576e44a7ddfdf2208f3bb21783f8eb120237af476497ed4285e7df6b5fecfa71" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>POKA</h1>
+      <p>Experience the art of handcrafted desserts with elegance and taste.</p>
+    </div>
+  </section>
+
+  <!-- Product Showcase -->
+  <section class="section">
+    <h2>Our Favorites</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Macarons">
+        <div class="product-info">
+          <h3>French Macarons</h3>
+          <p>Delicate almond meringue cookies filled with luscious ganache and jam.</p>
+          <div class="price">$18.00</div>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1605478371734-8848a4c1d9fd" alt="Chocolate Tart">
+        <div class="product-info">
+          <h3>Chocolate Tart</h3>
+          <p>Rich dark chocolate filling in a buttery crust topped with flakes of sea salt.</p>
+          <div class="price">$22.00</div>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587" alt="Strawberry Cake">
+        <div class="product-info">
+          <h3>Strawberry Shortcake</h3>
+          <p>Fluffy sponge cake layered with whipped cream and fresh strawberries.</p>
+          <div class="price">$28.00</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 POKA. All rights reserved. Crafted with sweetness and style.
+  </footer>
+
+</body>
+</html>

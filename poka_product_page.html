@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>POKA - Chocolate Delight</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fffaf6;
+      color: #4e342e;
+    }
+    header {
+      background-color: #8d6e63;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+    }
+    .product-section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2rem;
+      justify-content: center;
+      align-items: center;
+    }
+    .product-image {
+      flex: 1 1 300px;
+      padding: 1rem;
+    }
+    .product-image img {
+      max-width: 100%;
+      border-radius: 12px;
+    }
+    .product-details {
+      flex: 1 1 300px;
+      padding: 1rem;
+    }
+    .product-details h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-family: 'Playfair Display', serif;
+    }
+    .price {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+      color: #d84315;
+    }
+    .quantity {
+      margin: 1rem 0;
+    }
+    .add-to-cart {
+      background-color: #d84315;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .add-to-cart:hover {
+      background-color: #bf360c;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #efebe9;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    POKA
+  </header>
+
+  <section class="product-section">
+    <div class="product-image">
+      <img src="https://images.unsplash.com/photo-1590080876818-6612ecdf8f03" alt="Gourmet Chocolate Cake" />
+    </div>
+    <div class="product-details">
+      <h2>Gourmet Chocolate Cake</h2>
+      <p>Indulge in our handcrafted chocolate cake, rich with layers of velvety ganache and topped with dark chocolate shavings. Made fresh with premium ingredients.</p>
+      <div class="price">$24.99</div>
+      <div class="quantity">
+        Quantity: <input type="number" min="1" value="1" style="width: 60px; padding: 0.3rem;" />
+      </div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 POKA. All rights reserved.
+  </footer>
+</body>
+</html>
